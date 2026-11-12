@@ -197,7 +197,12 @@ item:
 from ansible_collections.infoblox.universal_ddi.plugins.module_utils.modules import UniversalDDIAnsibleModule
 
 try:
-    from ipam_federation import NextAvailableBlockRequest, NextAvailableFederatedBlockApi, OverlappingBlock, OverlappingBlockApi
+    from ipam_federation import (
+        NextAvailableBlockRequest,
+        NextAvailableFederatedBlockApi,
+        OverlappingBlock,
+        OverlappingBlockApi,
+    )
     from universal_ddi_client import ApiException, NotFoundException
 except ImportError:
     pass  # Handled by UniversalDDIAnsibleModule
